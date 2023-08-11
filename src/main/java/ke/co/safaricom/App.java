@@ -2,19 +2,14 @@ package ke.co.safaricom;
 
 public class App {
 
-    public static int add(int x, int y){
-        return x + y;
-    }
-
-    public static float add(float x, float y){
-        return x + y;
-
-    }
     public static void main(String[] args) {
-        Person student = new Person();
-        student.setAge(20);
-        System.out.println(student.getAge());
-
-
+        Account sampleAccount = new Account();
+        System.out.println(sampleAccount.getAccountBalance());
+        sampleAccount.deposit(1000);
+        System.out.println(sampleAccount.getAccountBalance());
+        System.out.println(sampleAccount.withdraw(1000));
+        System.out.println(sampleAccount.withdraw(900));
+        System.out.println(sampleAccount.getAccountBalance());
     }
+
 }
